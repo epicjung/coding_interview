@@ -17,7 +17,7 @@ int main(int argc, char** argv) {
     std::vector<int> answer;
     fibonacci(0, 1, answer);
     for (size_t i = 0; i < answer.size(); ++i) {
-        std::cout << i << " ";
+        std::cout << answer[i] << " ";
     }
     std::cout << std::endl;
     return 0;
