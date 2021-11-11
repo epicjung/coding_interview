@@ -30,5 +30,8 @@ Study and implement frequently asked data structure in coding interviews
     3. Until the unmanaged element is left with one
 
   - Insertion sort - O(n^2)
-  
     ![alt text](https://github.com/epicjung/coding_interview/blob/main/images/insertion_sort.png?raw=true)
+    
+    1. Assume the first element '7' is already sorted, the second data '5' is either inserted into 7's left or right
+    2. Do above step until the pointer reaches the end of the list
+
