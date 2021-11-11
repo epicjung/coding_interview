@@ -21,3 +21,13 @@ Study and implement frequently asked data structure in coding interviews
     2. Pop the node from the queue
     3. Push unvisited adjcent nodes to the queue and mark them visited
     4. Do 2~3 until the queue is empty
+
+### Sorting
+  - Selection sort - O(n^2)
+    
+    1. Find smallest element from the unmanaged elements
+    2. Swap the found element with the front most element in the unmanaged elements
+    3. Until the unmanaged element is left with one
+
+  - Insertion sort - O(n^2)
+    ![alt text](github.com/epicjung/coding_interview/blob/main/images/insertion_sort.jpg
