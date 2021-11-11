@@ -10,6 +10,10 @@ Study and implement frequently asked data structure in coding interviews
     4. If no adjacent nodes exist or all adjacnet nodes are visited, the node on the top of the stack is popped
     5. Do 2~4 until the stack is empty.
 
+  - Applications:
+
+    - Shortest distance from start to end 
+
 ### Breath First Search (BFS) 
   - BFS uses queue data structure to search for the most adjcent nodes first
 
