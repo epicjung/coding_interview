@@ -42,5 +42,12 @@ Study and implement frequently asked data structure in coding interviews
     - Set a pivot data and swapping the elements that are bigger and smaller than the pivot data
     - When comparing the two elements, two pointers from the end (finding smaller element) and start (finding larger element) approach to the center.
     - Usually, the pitvot data is the first data of the list
+       
+      ![alt text](https://github.com/epicjung/coding_interview/blob/main/images/quick_sort.png?raw=true)
 
-    ![alt text](https://github.com/epicjung/coding_interview/blob/main/images/quick_sort.png?raw=true)
+    - If two pointers intersect, the smaller data will be swapped with the pivot data.
+    - Now, divide is completed
+      
+      ![alt text](https://github.com/epicjung/coding_interview/blob/main/images/quick_sort_divide.png?raw=true)
+
+
