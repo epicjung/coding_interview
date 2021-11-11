@@ -38,7 +38,9 @@ Study and implement frequently asked data structure in coding interviews
     1. Assume the first element '7' is already sorted, the second data '5' is either inserted into 7's left or right
     2. Do above step until the pointer reaches the end of the list
   
-  - Quick sort - O(NlogN)
+  - Quick sort
+    - Best: O(NlogN)
+    - Worst: O(N^2) - already sorted list
     - Set a pivot data and swapping the elements that are bigger and smaller than the pivot data
     - When comparing the two elements, two pointers from the end (finding smaller element) and start (finding larger element) approach to the center.
     - Usually, the pitvot data is the first data of the list
