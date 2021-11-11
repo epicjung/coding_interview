@@ -11,13 +11,6 @@
 # 1 <= N, M <= 10000
 # This problem can be solved either using DFS or BFS
 
-sample_input = "4 5\n00110\n00011\n11111\n00000"
-
-input_array = sample_input.split('\n')
-N = int(input_array[0].split(' ')[0])
-M = int(input_array[0].split(' ')[1])
-matrix = input_array[1:]
-
 def get_adjacent(matrix, coord, adjacents, visited):
     steps = [(0,1), (1, 0), (-1, 0), (0, -1)]
     for ii, ij in steps:
@@ -36,7 +29,7 @@ def not_visited(key, visited):
 def coord_to_key(coord):
     return "{}{}".format(coord[0],coord[1])
 
-def bfs(coord, queue, visited, answer, level):
+def bfs(matrix, coord, queue, visited, answer, level):
     key = coord_to_key(coord)
     queue.append((coord, level))
     visited[key] = True
@@ -54,7 +47,7 @@ def bfs(coord, queue, visited, answer, level):
                 visited[adj_key] = True
                 queue.append((adj_coord, cur_level+1))
 
-def bfs_method():
+def bfs_method(matrix, N, M):
     visited = {}
     queue = []
     start_node_cnt = 0
@@ -63,16 +56,16 @@ def bfs_method():
         for j in range(M):
             if matrix[i][j] == '0':
                 key = coord_to_key((i, j))
-                if key not in visited: # start node
+                if not_visited(key, visited): # start node
                     start_node_cnt += 1
                     level = 0
                     answer = []
-                    bfs((i, j), queue, visited, answer, level)
+                    bfs(matrix, (i, j), queue, visited, answer, level)
                     print("Icecream #{}: {}".format(start_node_cnt, answer))
     
     print("Total icecream: {}".format(start_node_cnt))
 
-def dfs(coord, visited, answer, level):
+def dfs(matrix, coord, visited, answer, level):
     key = coord_to_key(coord)
     if not_visited(key, visited):
         visited[key] = True
@@ -80,23 +73,35 @@ def dfs(coord, visited, answer, level):
         answer.append((key, level))
         get_adjacent(matrix,(coord[0], coord[1]), adjacents, visited)
         for adj_coord in adjacents:
-            dfs(adj_coord, visited, answer, level+1)
+            dfs(matrix, adj_coord, visited, answer, level+1)
 
-def dfs_method():
+def dfs_method(matrix, N, M):
     visited = {}
     start_node_cnt = 0
     for i in range(N):
         for j in range(M):
             if matrix[i][j] == '0':
                 start_key = coord_to_key((i, j))
-                if start_key not in visited: # start node
+                if not_visited(start_key, visited): # start node
                     answer = []
                     start_node_cnt += 1
                     level = 0
-                    dfs((i, j), visited, answer, level)
+                    dfs(matrix, (i, j), visited, answer, level)
                     print("Icecream #{}: {}".format(start_node_cnt, answer))
     
     print("Total icecream: {}".format(start_node_cnt))
     
 
-dfs_method()
+sample_input = "4 5\n00110\n00011\n11111\n00000"
+input_array = sample_input.split('\n')
+N = int(input_array[0].split(' ')[0])
+M = int(input_array[0].split(' ')[1])
+matrix = input_array[1:]
+bfs_method(matrix, N, M)
+
+sample_input = "3 3\n001\n010\n101"
+input_array = sample_input.split('\n')
+N = int(input_array[0].split(' ')[0])
+M = int(input_array[0].split(' ')[1])
+matrix = input_array[1:]
+bfs_method(matrix, N, M)
