@@ -50,4 +50,4 @@ Study and implement frequently asked data structure in coding interviews
       
       ![alt text](https://github.com/epicjung/coding_interview/blob/main/images/quick_sort_divide.png?raw=true)
 
-
+    - Start with a new pivot in each of the divided list
