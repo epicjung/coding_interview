@@ -29,7 +29,10 @@ Study and implement frequently asked data structure in coding interviews
     2. Swap the found element with the front most element in the unmanaged elements
     3. Until the unmanaged element is left with one
 
-  - Insertion sort - O(n^2)
+  - Insertion sort
+    - worst: O(n^2)
+    - best: O(n)
+   
     ![alt text](https://github.com/epicjung/coding_interview/blob/main/images/insertion_sort.png?raw=true)
     
     1. Assume the first element '7' is already sorted, the second data '5' is either inserted into 7's left or right
