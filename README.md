@@ -23,13 +23,13 @@ Study and implement frequently asked data structure in coding interviews
     4. Do 2~3 until the queue is empty
 
 ### Sorting
-  - Selection sort - O(N^2)
+  - **Selection sort** - O(N^2)
     
     1. Find smallest element from the unmanaged elements
     2. Swap the found element with the front most element in the unmanaged elements
     3. Until the unmanaged element is left with one
 
-  - Insertion sort
+  - **Insertion sort**
     - worst: O(N^2)
     - best: O(N)
    
@@ -38,7 +38,7 @@ Study and implement frequently asked data structure in coding interviews
     1. Assume the first element '7' is already sorted, the second data '5' is either inserted into 7's left or right
     2. Do above step until the pointer reaches the end of the list
   
-  - Quick sort
+  - **Quick sort**
     - Best: O(NlogN)
     - Worst: O(N^2) - already sorted list
     - Set a pivot data and swapping the elements that are bigger and smaller than the pivot data
@@ -53,3 +53,5 @@ Study and implement frequently asked data structure in coding interviews
       ![alt text](https://github.com/epicjung/coding_interview/blob/main/images/quick_sort_divide.png?raw=true)
 
     - Start with a new pivot in each of the divided list
+
+  - **counting sort** 
