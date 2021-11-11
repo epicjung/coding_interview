@@ -40,7 +40,7 @@ Study and implement frequently asked data structure in coding interviews
   
   - Quick sort
     - Set a pivot data and swapping the elements that are bigger and smaller than the pivot data
-    - When comparing the two elements, two pointers from the end and start approach to the center array.
+    - When comparing the two elements, two pointers from the end (finding smaller element) and start (finding larger element) approach to the center array.
     - Usually, the pitvot data is the first data of the list
 
     ![alt text](https://github.com/epicjung/coding_interview/blob/main/images/quick_sort.png?raw=true)
