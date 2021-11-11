@@ -30,4 +30,4 @@ Study and implement frequently asked data structure in coding interviews
     3. Until the unmanaged element is left with one
 
   - Insertion sort - O(n^2)
-    ![alt text](github.com/epicjung/coding_interview/blob/main/images/insertion_sort.jpg
+    ![alt text](github.com/epicjung/coding_interview/blob/main/images/insertion_sort.png)
